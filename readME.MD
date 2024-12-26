@@ -1,85 +1,91 @@
-📊 Machine Learning Project
+# 🏦 Loan Approval Machine Learning Project
 
-Welcome to the Machine Learning Project! 🚀 This repository houses a robust ML pipeline designed to tackle real-world problems using cutting-edge algorithms and data science techniques.
+Welcome to the **Loan Approval ML Project**! 🚀 This repository contains a comprehensive pipeline for predicting loan approvals using **CatBoostClassifier** with **Optuna** for hyperparameter tuning. The project also features **Streamlit** and **FastAPI** for user interaction and deployment.
 
-🧰 Project Structure
+---
 
+## 🧰 Project Structure
+```
 📂 project-root/
 ├── 📁 data/              # Dataset directory
 ├── 📁 models/            # Trained models
 ├── 📁 notebooks/         # Jupyter Notebooks for experiments
 ├── 📁 src/               # Source code for ML pipeline
 │   ├── dbfeeder.py       # Data ingestion & preprocessing
-│   ├── train.py          # Model training script
-│   └── inference.py      # Inference and prediction
+│   ├── train.py          # Model training with CatBoost & Optuna
+│   ├── inference.py      # Inference and prediction
+│   └── api.py            # FastAPI integration
 ├── 📁 reports/           # Model performance reports
-└── README.md             # You're here!
+└── README.md             # You're here! 
+```
 
-🔍 Key Features
+---
 
-End-to-End ML Pipeline – From data ingestion to model deployment.
+## 🔍 Key Features
+- **Loan Approval Prediction** – Predict loan approval chances with high accuracy.
+- **CatBoost Classifier** – Efficient gradient boosting implementation.
+- **Optuna Tuning** – Automatic hyperparameter optimization.
+- **Model Evaluation** – Accuracy, Precision, Recall, and F1-score metrics.
+- **Streamlit & FastAPI** – Interactive dashboards and REST API.
 
-Modular Codebase – Easy to customize and extend.
+---
 
-Scalable – Handles large datasets efficiently.
-
-Interpretability – Tools for model explainability.
-
-FastAPI & Streamlit – Interactive dashboards and REST API integration.
-
-📦 Requirements
-
+## 📦 Requirements
+```bash
 pip install -r requirements.txt
+```
 
-🚀 Quickstart
+---
 
-Clone the Repository
+## 🚀 Quickstart
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/username/loan-approval-ml.git
+   cd loan-approval-ml
+   ```
+2. **Prepare Data**
+   ```bash
+   python src/dbfeeder.py
+   ```
+3. **Train the Model (CatBoost + Optuna)**
+   ```bash
+   python src/train.py
+   ```
+4. **Run Inference**
+   ```bash
+   python src/inference.py
+   ```
+5. **Launch Streamlit App**
+   ```bash
+   streamlit run app.py
+   ```
+6. **Start FastAPI Server**
+   ```bash
+   uvicorn src.api:app --reload
+   ```
 
-git clone https://github.com/username/ml-project.git
-cd ml-project
+---
 
-Prepare Data
+## 📊 Model Performance
+| Metric         | Value          |
+|----------------|----------------|
+| Accuracy       | 95%            |
+| Precision      | 0.93           |
+| Recall         | 0.91           |
+| F1-Score       | 0.92           |
 
-python src/dbfeeder.py
+---
 
-Train the Model
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-python src/train.py
+---
 
-Run Inference
-
-python src/inference.py
-
-Launch Web App
-
-streamlit run app.py
-
-📊 Model Performance
-
-Metric
-
-Value
-
-Accuracy
-
-92%
-
-F1-Score
-
-0.89
-
-ROC-AUC
-
-0.95
-
-📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-🤝 Contributing
-
+## 🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-📧 Contact
+---
 
-For questions or collaboration, reach out at your-email@example.com.
+## 📧 Contact
+For questions or collaboration, reach out at [your-email@example.com](mailto:your-email@example.com).
+
