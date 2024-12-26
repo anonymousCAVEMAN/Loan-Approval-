@@ -7,16 +7,12 @@ Welcome to the **Loan Approval ML Project**! 🚀 This repository contains a com
 ## 🧰 Project Structure
 ```
 📂 project-root/
-├── 📁 data/              # Dataset directory
-├── 📁 models/            # Trained models
-├── 📁 notebooks/         # Jupyter Notebooks for experiments
-├── 📁 src/               # Source code for ML pipeline
-│   ├── dbfeeder.py       # Data ingestion & preprocessing
-│   ├── train.py          # Model training with CatBoost & Optuna
-│   ├── inference.py      # Inference and prediction
-│   └── api.py            # FastAPI integration
-├── 📁 reports/           # Model performance reports
-└── README.md             # You're here! 
+├── 📁 data/            # Dataset directory
+├── 📁 artifacts/       # Trained models
+├── 📁 reserch/         # Jupyter Notebooks for experiments
+└── fastapi_app.py       # FastAPI integration
+└── README.md           # You're here! 
+└── fastapi_app.py      # FastAPI integration
 ```
 
 ---
@@ -32,34 +28,17 @@ Welcome to the **Loan Approval ML Project**! 🚀 This repository contains a com
 
 ## 📦 Requirements
 ```bash
-pip install -r requirements.txt
+pip install -r request.txt
 ```
 
 ---
 
 ## 🚀 Quickstart
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/username/loan-approval-ml.git
-   cd loan-approval-ml
-   ```
-2. **Prepare Data**
-   ```bash
-   python src/dbfeeder.py
-   ```
-3. **Train the Model (CatBoost + Optuna)**
-   ```bash
-   python src/train.py
-   ```
-4. **Run Inference**
-   ```bash
-   python src/inference.py
-   ```
-5. **Launch Streamlit App**
+1. **Launch Streamlit App**
    ```bash
    streamlit run app.py
    ```
-6. **Start FastAPI Server**
+2. **Start FastAPI Server**
    ```bash
    uvicorn src.api:app --reload
    ```
@@ -71,8 +50,8 @@ pip install -r requirements.txt
 |----------------|----------------|
 | Accuracy       | 95%            |
 | Precision      | 0.93           |
-| Recall         | 0.91           |
-| F1-Score       | 0.92           |
+| Recall         | 0.86           |
+| F1-Score       | 0.81           |
 
 ---
 
@@ -80,9 +59,6 @@ pip install -r requirements.txt
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-## 🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 ---
 
