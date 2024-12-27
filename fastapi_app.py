@@ -34,14 +34,14 @@ default_on_file_map = {"Yes": 1, "No": 0}
 # Load the trained ML model
 def load_light_model():
     try:
-        with open("reserch\lightgbm_model.pkl", "rb") as f:
+        with open("E:\\python\\2.PROJECTS\\loan\\artifacts\\lightgbm_model.pkl", "rb") as f:
             return pickle.load(f)
     except Exception as e:
         raise RuntimeError(f"Error loading model: {e}")
 
 def load_cat_model():
     try:
-        with open("reserch\CB_classifier.pkl",'rb') as f:
+        with open("E:\\python\\2.PROJECTS\\loan\\artifacts\\CB_classifier.pkl",'rb') as f:
             return pickle.load(f)
     except Exception as e:
         raise RuntimeError(f"Error loading model : {e}")

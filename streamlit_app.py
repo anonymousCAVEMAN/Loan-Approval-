@@ -74,7 +74,6 @@ if st.button("Submit"):
     try:
         # Send the request as JSON payload
         response = requests.post(url, json=data)  # Use the 'json' argument instead of 'data'
-        
         if response.status_code == 200:
             st.write("ML Model Output: ", response.json())
         else:

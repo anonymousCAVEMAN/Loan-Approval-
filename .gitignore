@@ -1,4 +1,5 @@
 __pycache__/
 my_project.egg-info/
 venv/
+images/
 fast.ipynb
