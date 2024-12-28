@@ -20,6 +20,7 @@ Welcome to the **Loan Approval ML Project**! 🚀 This repository contains a com
 ## 🔍 Key Features
 - **Loan Approval Prediction** – Predict loan approval chances with high accuracy.
 - **CatBoost Classifier** – Efficient gradient boosting implementation.
+- **SMOTE(synthetic minority oversampling technique** – Balances the class imbalance in target variable
 - **Optuna Tuning** – Automatic hyperparameter optimization.
 - **Model Evaluation** – Accuracy, Precision, Recall, and F1-score metrics.
 - **Streamlit & FastAPI** – Interactive dashboards and REST API.
